@@ -10,7 +10,7 @@
 and Zero-Shot Multi-Speaker Text-to-Speech</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-156162365-1&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-SSN01ZZW8G&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-156162365-1"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-SSN01ZZW8G&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-156162365-1&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-SSN01ZZW8G&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-156162365-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -87,7 +87,6 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
 
 
 
-        <!-- Audio Samples -->
         <div class="col">
             <hr>
             <div class="row text-center">
@@ -100,15 +99,17 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
 
 
 	    <div>
-		    <p style="font-size:large; color:black"> We investigated our proposed method in extremely low-resource scenarios with a multi-lingual multi-speaker dataset. In order to demonstrate the model's scalability to low-resource languages, we selected English and German as seen languages in the T1 stage and Portuguese as an unseen language that does not appear in the T1 stage. The following table provides an overview of the dataset used in both the T1 and T2 stages.</p>
+		    <p style="font-size:large; color:black"> We investigated our proposed method in extremely low-resource scenarios with a multi-lingual multi-speaker dataset. In order to demonstrate the model's scalability to low-resource languages, we selected English and German as seen languages in the T1 stage and Portuguese as an unseen language that does not appear in the T1 stage. The following table provides an overview of the dataset used in both the T1 and T2 stages.
+			Furthermore, we provide our ablation study about zero-shot voice conversion. In our experiment, we
+evaluated the performance of our model in the intra-lingual and cross-lingual voice conversion.</p>
 	    </div>
 
 	<center>
-    <img src="data_table.PNG" alt="My Image", class="center">
+    <img src="data_table.PNG" alt="My Image" ,="" class="center">
 
     <center>
                             
-	    </div>
+	    </center></center></div>
 		
 
 
@@ -127,7 +128,7 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
 		
 
             <div class="row" style="margin-top: 40px; margin-bottom: 10px;">
-                <p class="h4">Audio samples</p>
+                <p class="h4">(1) English audio samples</p>
             </div>
 
 
@@ -137,6 +138,15 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                         <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;"><b>Text</b></p>
                         <div style="height: 130px; vertical-align: middle">
 			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>But they proceeded in all seriousness, and would have shrunk from no outrage or atrocity in furtherance of their foolhardy enterprise.</i></p>
+                        </div>
+                    </div>
+
+					<div class="row" style="width: 450px; height:50px; ">
+                        <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Reference</p>
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./VCTK/REF/p237_147.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
                         </div>
                     </div>
 
@@ -151,7 +161,7 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
 			
 			
                     <div class="row" style="width: 450px; height:50px; ">
-                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>(1) LJSpeech, 10 min</b></p>
+                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>① ML-1 hour</b></p>
                         <div style="height: 60px; vertical-align: middle">
                         </div>
                     </div>
@@ -159,7 +169,7 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
 			
                     <div class="row" style="width: 450px; height:50px; ">
                         <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">GlowTTS</p>
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">YourTTS</p>
                         </div>
                         <div style="height: 60px; ">
                             <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
@@ -169,7 +179,7 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                     </div>
                     <div class="row" style="width: 450px; height:50px; ">
                         <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">FastSpeech2</p>
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed method</p>
                         </div>
                         <div style="height: 60px; ">
                             <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
@@ -177,37 +187,18 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                             </audio>
                         </div>
                     </div>
-                    <div class="row" style="width: 450px; height:50px; ">
-                        <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">VITS-baseline</p>
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		    <div class="row" style="width: 450px; height:50px; ">
-                        <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed
-                            </p>
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+                    
+		    
 
                     <div class="row" style="width: 450px; height:50px; ">
-                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>(2) LJSpeech, 1 hour</b></p>
+                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>② ML-5 hours</b></p>
                         <div style="height: 60px; vertical-align: middle">
                         </div>
                     </div>
 
                     <div class="row" style="width: 450px; height:50px; ">
                         <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">GlowTTS</p>
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">YourTTS</p>
                         </div>
                         <div style="height: 60px; ">
                             <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
@@ -217,7 +208,7 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                     </div>
                     <div class="row" style="width: 450px; height:50px; ">
                         <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">FastSpeech2</p>
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed method</p>
                         </div>
                         <div style="height: 60px; ">
                             <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
@@ -225,34 +216,16 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                             </audio>
                         </div>
                     </div>
+                    
+                    
                     <div class="row" style="width: 450px; height:50px; ">
-                        <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">VITS-baseline</p>
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class="row" style="width: 450px; height:50px; ">
-                        <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed</p>
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class="row" style="width: 450px; height:50px; ">
-                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>(3) LJSpeech, 10 hour</b></p>
+                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>③ ML-10 hours</b></p>
                         <div style="height: 60px; vertical-align: middle">
                         </div>
                     </div>
                     <div class="row" style="width: 450px; height:50px; ">
                         <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">GlowTTS</p>
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">YourTTS</p>
                         </div>
                         <div style="height: 60px; ">
                             <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
@@ -262,7 +235,7 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                     </div>
                     <div class="row" style="width: 450px; height:50px; ">
                         <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">FastSpeech2</p>
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed method</p>
                         </div>
                         <div style="height: 60px; ">
                             <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
@@ -272,24 +245,13 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                     </div>
                     <div class="row" style="width: 450px; height:50px; ">
                         <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">VITS-baseline</p>
+                            
                         </div>
                         <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
+                            
                         </div>
                     </div>
-                    <div class="row" style="width: 450px; height:50px; ">
-                        <div style="height: 60px;">
-                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed</p>
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+                    
 		 </div>
 		    
 <!-- 	<div style='display: flex; align-content: center;flex-wrap: nowrap; '> -->
@@ -297,6 +259,14 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                     <div class="row" style="width: 300px; height:130px; ">
                         <div style="height: 130px; vertical-align: middle">
 			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>The proceeds of the robbery were lodged in a Boston bank,</i></p>
+                        </div>
+                    </div>
+
+		            <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/Ref/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
                         </div>
                     </div>
 		
@@ -331,24 +301,8 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                             </audio>
                         </div>
                     </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+                    
+		    
                     <div class="row" style="width: 300px; height:50px; ">
                         <div style="height: 60px; vertical-align: middle">
                         </div>
@@ -372,24 +326,8 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                             </audio>
                         </div>
                     </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
+                    
+                    
                     <div class="row" style="width: 300px; height:50px; ">
                         <div style="height: 60px; vertical-align: middle">
                         </div>
@@ -416,25 +354,22 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                         <div style="height: 60px;">
                         </div>
                         <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
+                            
                         </div>
 		    </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
+                    
 		</div>
                 <div style="flex: 3;  ">
                     <div class="row" style="width: 300px; height:130px; ">
                         <div style="height: 130px; vertical-align: middle">
 			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>On the other hand, he could have traveled some distance with the money he did have and he did return to his room where he obtained his revolver.</i></p>
+                        </div>
+                    </div>
+		            <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
                         </div>
                     </div>
                     <div class="row" style="width: 300px; height:50px; ">
@@ -467,24 +402,8 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                             </audio>
                         </div>
                     </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+                    
+		    
                     <div class="row" style="width: 300px; height:50px; ">
                         <div style="height: 60px; vertical-align: middle">
                         </div>
@@ -507,24 +426,8 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                             </audio>
                         </div>
                     </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
+                    
+                    
 
                     <div class="row" style="width: 300px; height:50px; ">
                         <div style="height: 60px; vertical-align: middle">
@@ -554,25 +457,22 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                         <div style="height: 60px;">
                         </div>
                         <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
+                            
                         </div>
 		    </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
+                    
 	        </div>
                 <div style="flex: 4;  ">
                     <div class="row" style="width: 300px; height:130px; ">
                         <div style="height: 130px; vertical-align: middle">
 			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>might have been more alert in the Dallas motorcade if they had retired promptly in Fort Worth.</i></p>
+                        </div>
+                    </div>
+		            <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
                         </div>
                     </div>
                     <div class="row" style="width: 300px; height:50px; ">
@@ -604,24 +504,8 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                             </audio>
                         </div>
                     </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+                    
+		    
                     <div class="row" style="width: 300px; height:50px; ">
                         <div style="height: 60px; vertical-align: middle">
                         </div>
@@ -644,24 +528,8 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                             </audio>
                         </div>
                     </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px;">
-                        </div>
-                        <div style="height: 60px; ">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
+                    
+                    
                     <div class="row" style="width: 300px; height:50px; ">
                         <div style="height: 60px; vertical-align: middle">
                         </div>
@@ -688,8 +556,223 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                         <div style="height: 60px;">
                         </div>
                         <div style="height: 60px; ">
+                            
+                        </div>
+		    </div>
+                    
+		 </div>
+            </div>
+            <div class="row" style="margin-top: 40px; margin-bottom: 10px;">
+                <p class="h4">(2) German audio samples</p>
+            </div>
+
+
+            <div style="display: flex; align-content: center;flex-wrap: nowrap;">
+                <div style="flex: 1;  ">
+                    <div class="row" style="width: 450px; height:130px; ">
+                        <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;"><b>Text</b></p>
+                        <div style="height: 130px; vertical-align: middle">
+			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>But they proceeded in all seriousness, and would have shrunk from no outrage or atrocity in furtherance of their foolhardy enterprise.</i></p>
+                        </div>
+                    </div>
+
+					<div class="row" style="width: 450px; height:50px; ">
+                        <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Reference</p>
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./VCTK/REF/p237_147.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Ground Truth</p>
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+			
+			
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>① ML-1 hour</b></p>
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+			
+			
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">YourTTS</p>
+                        </div>
+                        <div style="height: 60px; ">
                             <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed method</p>
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+		    
+
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>② ML-5 hours</b></p>
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">YourTTS</p>
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed method</p>
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>③ ML-10 hours</b></p>
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">YourTTS</p>
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed method</p>
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            
+                        </div>
+                        <div style="height: 60px; ">
+                            
+                        </div>
+                    </div>
+                    
+		 </div>
+		    
+<!-- 	<div style='display: flex; align-content: center;flex-wrap: nowrap; '> -->
+                <div style="flex: 2;">
+                    <div class="row" style="width: 300px; height:130px; ">
+                        <div style="height: 130px; vertical-align: middle">
+			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>The proceeds of the robbery were lodged in a Boston bank,</i></p>
+                        </div>
+                    </div>
+
+		            <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/Ref/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+		
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+			
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+		    
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+			
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
 		    </div>
@@ -698,19 +781,225 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                         </div>
                         <div style="height: 60px; ">
                             <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/FastSpeech2_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
 		    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            
+                        </div>
+		    </div>
+                    
+		</div>
+                <div style="flex: 3;  ">
+                    <div class="row" style="width: 300px; height:130px; ">
+                        <div style="height: 130px; vertical-align: middle">
+			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>On the other hand, he could have traveled some distance with the money he did have and he did return to his room where he obtained his revolver.</i></p>
+                        </div>
+                    </div>
+		            <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+			
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+		    
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+			
+			
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+		    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+		    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            
+                        </div>
+		    </div>
+                    
+	        </div>
+                <div style="flex: 4;  ">
+                    <div class="row" style="width: 300px; height:130px; ">
+                        <div style="height: 130px; vertical-align: middle">
+			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>might have been more alert in the Dallas motorcade if they had retired promptly in Fort Worth.</i></p>
+                        </div>
+                    </div>
+		            <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+		    
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+		    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+		    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            
+                        </div>
+		    </div>
+                    
+
 		 </div>
             </div>
-		
-		
-		
-		
 
 		
-
         <!-- Audio Samples -->
         <div class="col">
             <hr>
@@ -720,9 +1009,463 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                 </div>
             </div>
 	    <div>
-		    <p style="font-size:large; color:black"> The proposed model was pre-trained on the speech-only dataset of LibriTTS (245 hours, 1151 speakers), and fine-tuned on the subsets of labeled VCTK with denoted lengths and speakers. All the baselines were also trained on the denoted dataset.
- </p>
+		    
 	    </div>
+		
+		
+
+        <div class="row" style="margin-top: 40px; margin-bottom: 10px;">
+                <p class="h4">(1) Portuguese audio samples</p>
+            </div>
+
+
+            <div style="display: flex; align-content: center;flex-wrap: nowrap;">
+                <div style="flex: 1;  ">
+                    <div class="row" style="width: 450px; height:130px; ">
+                        <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;"><b>Text</b></p>
+                        <div style="height: 130px; vertical-align: middle">
+			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>But they proceeded in all seriousness, and would have shrunk from no outrage or atrocity in furtherance of their foolhardy enterprise.</i></p>
+                        </div>
+                    </div>
+
+
+					<div class="row" style="width: 450px; height:50px; ">
+                        <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Reference</p>
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./VCTK/REF/p237_147.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Ground Truth</p>
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+			
+			
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>① ML-1 hour</b></p>
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+			
+			
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">YourTTS</p>
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed method</p>
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+		    
+
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>② ML-5 hours</b></p>
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">YourTTS</p>
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed method</p>
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>③ ML-10 hours</b></p>
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">YourTTS</p>
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Proposed method</p>
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 450px; height:50px; ">
+                        <div style="height: 60px;">
+                            
+                        </div>
+                        <div style="height: 60px; ">
+                            
+                        </div>
+                    </div>
+                    
+		 </div>
+		    
+<!-- 	<div style='display: flex; align-content: center;flex-wrap: nowrap; '> -->
+                <div style="flex: 2;">
+                    <div class="row" style="width: 300px; height:130px; ">
+                        <div style="height: 130px; vertical-align: middle">
+			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>The proceeds of the robbery were lodged in a Boston bank,</i></p>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+		
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+			
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+		    
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+			
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+		    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+		    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            
+                        </div>
+		    </div>
+                    
+		</div>
+                <div style="flex: 3;  ">
+                    <div class="row" style="width: 300px; height:130px; ">
+                        <div style="height: 130px; vertical-align: middle">
+			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>On the other hand, he could have traveled some distance with the money he did have and he did return to his room where he obtained his revolver.</i></p>
+                        </div>
+                    </div>
+
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+			
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+		    
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+			
+			
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+		    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+		    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            
+                        </div>
+		    </div>
+                    
+	        </div>
+                <div style="flex: 4;  ">
+                    <div class="row" style="width: 300px; height:130px; ">
+                        <div style="height: 130px; vertical-align: middle">
+			<p style="height: 130px; width: 250px; padding: 15px 0; text-align: center;"><i>might have been more alert in the Dallas motorcade if they had retired promptly in Fort Worth.</i></p>
+                        </div>
+                    </div>
+
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
+                                <source src="./LJSpeech/GT/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+		    
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px; vertical-align: middle">
+                        </div>
+                    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/GlowTTS_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+		    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px ">
+                                <source src="./LJSpeech/FastSpeech2_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+		    </div>
+                    <div class="row" style="width: 300px; height:50px; ">
+                        <div style="height: 60px;">
+                        </div>
+                        <div style="height: 60px; ">
+                            
+                        </div>
+		    </div>
+                    
+		 </div>
+            </div>
+     </div>
+            </div>	
+		
+
+		
+
+        <!-- Audio Samples -->
+        <div class="col">
+            <hr>
+            <div class="row text-center">
+                <div class="col">
+                    <p class="h2 font-weight-bold ">Zero-shot voice conversion</p>
+                </div>
+            </div>
+
 		
 		
 
@@ -749,14 +1492,6 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                         </div>
                     </div>
 
-                    <div class="row" style="width: 450px; height:50px; ">
-                        <p style="height: 60px; width: 150px; padding: 15px 0; text-align: center;">Ground Truth</p>
-                        <div style="height: 60px; vertical-align: middle">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
-                                <source src="./VCTK/GT/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
 	
                     <div class="row" style="width: 450px; height:50px; ">
                         <p style="height: 60px; width: 250px; padding: 15px 0; text-align: left;"><b>(1) LJSpeech 30 min, 1 speaker</b></p>
@@ -931,13 +1666,6 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                         </div>
                     </div>
 		
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px; vertical-align: middle">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
-                                <source src="./VCTK/GT/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
 
                     <div class="row" style="width: 300px; height:50px; ">
                         <div style="height: 60px; vertical-align: middle">
@@ -1090,14 +1818,7 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                             </audio>
                         </div>
                     </div>
-			
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px; vertical-align: middle">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
-                                <source src="./VCTK/GT/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+
                     <div class="row" style="width: 300px; height:50px; ">
                         <div style="height: 60px; vertical-align: middle">
                         </div>
@@ -1252,13 +1973,7 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                             </audio>
                         </div>
                     </div>
-                    <div class="row" style="width: 300px; height:50px; ">
-                        <div style="height: 60px; vertical-align: middle">
-                            <audio controls="" controlslist="nodownload" style="display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px">
-                                <source src="./VCTK/GT/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+
                     <div class="row" style="width: 300px; height:50px; ">
                         <div style="height: 60px; vertical-align: middle">
                         </div>
@@ -1392,8 +2107,9 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
                             </audio>
                         </div>
 		    </div>
-		 </div>
-            </div>
+
+
+			
 
 
 
@@ -1406,4 +2122,4 @@ and Zero-Shot Multi-Speaker Text-to-Speech</p>
 
 
 
-</div></div></div></div></body></html>
+</div></div></div></div></div></div></div></body></html>
